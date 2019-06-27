@@ -1,0 +1,24 @@
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<script>
+    // const http = new XMLHttpRequest();
+    // const url='https://interview.adpeai.com/api/v1/get-task';
+    // http.open("GET", url,true);
+    // http.send();
+    // http.onreadystatechange = (e) => {
+    //     console.log(http.responseText)
+    // }
+    function jsonCallback(json){
+        console.log(json);
+    }
+    $.ajax({
+        url: "https://interview.adpeai.com/api/v1/get-task",
+        contentType: 'application/json',
+        dataType:'jsonp',
+        responseType:'application/json',
+        success: function(data) {
+            console.log(data);
+        },
+    });
+</script>

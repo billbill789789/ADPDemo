@@ -1,0 +1,17 @@
+{
+  "name": "adpdemo",
+  "version": "1.0.0",
+  "description": "This project is to calculate/display result from ADP REST API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Tewei Lai",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "request": "^2.81.0"
+  }
+}
