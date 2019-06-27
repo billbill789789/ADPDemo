@@ -28,17 +28,20 @@ function calculate(operation,left,right){
     if(operation=='addition'){
         return left+right;
     }
-    else if("subtraction"){
+    else if(operation=="subtraction"){
         return left-right;
     }
-    else if("remainder"){
-        return left%right;
+    else if(operation=="remainder"){
+        let result= left%right;
+        return result;
     }
-    else if("multiplication"){
-        return left*right;
+    else if(operation=="multiplication"){
+        let result = left*right;
+        return result;
     }
-    else if("division"){
-        return left/right;
+    else if(operation=="division"){
+        let result = left/right;
+        return result;
     }
 }
 
